@@ -1,0 +1,37 @@
+
+// ipad (min-width: 768px) and (max-width: 1024px)
+$breakpoint-tablet-min-width:48rem;
+$breakpoint-tablet-max-width:64rem; 
+
+// mobile (min-width: 320px) and (max-width: 667px)
+$breakpoint-mobile-min-width:20rem;
+$breakpoint-mobile-max-width:41.6875rem;
+
+// desktop (min-width: 1025px) and (max-width: 1440px)
+$breakpoint-desktop-min-width: 64.0625rem;
+$breakpoint-desktop-max-width: 1440px;
+
+$min-width:'';
+$max-width:'';
+
+// -----------------------------------
+
+@mixin tablet ($min-width, $max-width){
+    @media only screen and (min-width:$min-width) and (max-width:$max-width){
+        @content;
+    }
+}
+
+
+@mixin mobile-view {
+    @include media-max-with($breakpoint-mobile-max-width){
+        @content;
+    }
+}
+
+@mixin mobile-view {
+    @include media-max-with($breakpoint-mobile-max-width){
+        @content;
+    }
+}
+
