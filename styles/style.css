@@ -5,6 +5,11 @@
   .container-fluid .primaryHeader {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 1rem 1.5625rem; }
+    @media (min-width: 20rem) and (max-width: 41.6875rem) {
+      .container-fluid .primaryHeader {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 1rem 1.5625rem;
+        border-bottom: 1px solid #c1c1c1; } }
     .container-fluid .primaryHeader > .container-fluid ul {
       position: relative; }
       .container-fluid .primaryHeader > .container-fluid ul .companylogo {
@@ -94,6 +99,11 @@
   .container-fluid .primaryHeader {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 1rem 1.5625rem; }
+    @media (min-width: 20rem) and (max-width: 41.6875rem) {
+      .container-fluid .primaryHeader {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 1rem 1.5625rem;
+        border-bottom: 1px solid #c1c1c1; } }
     .container-fluid .primaryHeader > .container-fluid ul {
       position: relative; }
       .container-fluid .primaryHeader > .container-fluid ul .companylogo {
@@ -189,6 +199,10 @@ body {
 @media (min-width: 20rem) and (max-width: 41.6875rem) {
   .hiddenMobile {
     display: none; } }
+
+@media (min-width: 20rem) and (max-width: 41.6875rem) {
+  .container-fluid {
+    overflow-x: hidden; } }
 
 .container-fluid .row.sectionOne .leftContainer, .container-fluid .row.sectionOne .rightContainer {
   display: flex; }

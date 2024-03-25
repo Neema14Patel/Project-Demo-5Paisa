@@ -1,5 +1,6 @@
 
-
+// @import '../partials/mixins-media-query';
+@import '../partials/media-queries';
 
 .container-fluid{
     .row{
@@ -13,8 +14,7 @@
             >.leftContainer{
                 h1{
                     font-size: xxx-large;
-                    @media (min-width:20rem) and (max-width:41.6875rem)
-                    {
+                    @include mobile-view{
                         font-size: x-large;
                         text-align: center;
                     }
@@ -23,9 +23,7 @@
                     font-weight: $font-weight-500;
                     font-size: 1.1rem;
                     color: $color-grey;
-                    @media (min-width:20rem) and (max-width:41.6875rem)
-                    {
-                        // font-size: x-large;
+                    @include mobile-view{
                         text-align: center;
                     }
                 }
@@ -35,7 +33,7 @@
                         display: flex;
                         flex-direction: row;
                         padding: 0rem;
-                        @media (min-width:20rem) and (max-width:41.6875rem){
+                        @include mobile-view{
                             justify-content: center;
                             margin: .625rem 0rem;
                         }
@@ -58,7 +56,7 @@
                 }
             }
             >.rightContainer{
-                @media (min-width:20rem) and (max-width:41.6875rem){
+                @include mobile-view{
                     padding: 0rem 2.5rem;
                 }
                 >.subscriptionDetails{
@@ -99,7 +97,7 @@
                 h1{
                     font-size: 1.5625rem;
                     color: $color-grey;
-                    @media (min-width:20rem) and (max-width:41.6875rem){
+                    @include mobile-view{
                         font-size: x-large;
                     }
                 }
@@ -117,7 +115,7 @@
                 color:$global-color-white ;
                 margin-bottom: 6.875rem;
                 padding-top: 5.3125rem;
-                @media (min-width:20rem) and (max-width:41.6875rem){
+                @include mobile-view{
                     margin-bottom: 3.875rem;
                 }
 
@@ -130,7 +128,7 @@
             padding-bottom: 5.3125rem;
             .verticalProgressBar{
                 margin: auto;
-                @media (min-width:20rem) and (max-width:41.6875rem){
+                @include mobile-view{
                     padding: 0rem 3.4375rem;
                 }
             }

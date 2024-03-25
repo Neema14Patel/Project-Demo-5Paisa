@@ -1,3 +1,6 @@
+@import '../partials/media-queries';
+
+
 .navbar-nav {
     &.menuFloatRight {
         .nav-item {
@@ -5,7 +8,7 @@
             .btn-primary {
                 &.btn-primary-red {
                     @include button-primary-background-red;
-                    @media (min-width:20rem) and (max-width:41.6875rem){
+                    @include mobile-view{
                         width: 100%;
                     }
                 }
@@ -16,7 +19,7 @@
                 background:none ;
                 color:$global-color-red ;
                 font-weight: $font-weight-500;
-                @media (min-width:20rem) and (max-width:41.6875rem){
+                @include mobile-view{
                     width: 100%;
                     margin-bottom: .625rem;
                 }
@@ -57,7 +60,7 @@
         .btn-primary-red{
             @include button-primary-background-red;
             width: 100%;
-    padding: .625rem;
+            padding: .625rem;
         }
     }
 }

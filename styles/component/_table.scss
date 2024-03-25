@@ -1,3 +1,5 @@
+@import '../partials/media-queries';
+
 .sectionFour{
     background-color: $white-smoke;
     display: flex;
@@ -11,7 +13,7 @@
   
     .saverPackInfo{
         margin: auto !important;
-        @media (min-width:20rem) and (max-width:41.6875rem){
+        @include mobile-view{
           overflow-x: auto;
         }
        

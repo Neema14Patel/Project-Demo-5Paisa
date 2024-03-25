@@ -3,7 +3,7 @@
     .margin-top-btm{
         margin-top: 8.125rem;
         margin-bottom: 5.125rem;
-        @media (min-width:20rem) and (max-width:41.6875rem){
+        @include mobile-view{
             margin-top: 3.125rem;
         }
     }
@@ -11,7 +11,7 @@
 }
 body{
     overflow-x: hidden;
-    @media (min-width:20rem) and (max-width:41.6875rem){
+    @include mobile-view{
         overflow-x: hidden !important;
     }
 }
@@ -27,16 +27,15 @@ body{
 .borderRight{
     border-right-style: dashed;
     color: #acacac;
-    @media (min-width:20rem) and (max-width:41.6875rem){
+    @include mobile-view{
         color: #f1f1f1;
     }
   
 }
 .borderBottom{
-    @media (min-width:20rem) and (max-width:41.6875rem){
+    @include mobile-view{
         border-bottom-style: dashed;
         color: #acacac;
-        
     }
 }
 .greyIcon{
@@ -49,7 +48,7 @@ body{
 }
 .hiddenDesktop{
     display: none;
-    @media (min-width:20rem) and (max-width:41.6875rem){
+    @include mobile-view{
         display: inline-block;
         width: -webkit-fill-available;
     }
@@ -58,12 +57,17 @@ body{
             background-color: $global-color-black;
 }
 .bgMobilewhite{
-    @media (min-width:20rem) and (max-width:41.6875rem){
+    @include mobile-view{
         background-color: $global-color-white;
     }
 }
 .hiddenMobile{
-    @media (min-width:20rem) and (max-width:41.6875rem){
+    @include mobile-view{
         display: none;
+    }
+}
+.container-fluid{
+    @include mobile-view{
+        overflow-x: hidden;
     }
 }

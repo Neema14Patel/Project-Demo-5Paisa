@@ -14,24 +14,20 @@ $breakpoint-desktop-max-width: 1440px;
 $min-width:'';
 $max-width:'';
 
-// -----------------------------------
-
-@mixin tablet ($min-width, $max-width){
-    @media only screen and (min-width:$min-width) and (max-width:$max-width){
+@mixin  mobile-view {
+    @media (min-width:$breakpoint-mobile-min-width) and (max-width:$breakpoint-mobile-max-width){
         @content;
     }
 }
 
-
-@mixin mobile-view {
-    @include media-max-with($breakpoint-mobile-max-width){
+@mixin  tablet-view {
+    @media (min-width:$breakpoint-tablet-min-width) and (max-width:$breakpoint-tablet-max-width){
         @content;
     }
 }
 
-@mixin mobile-view {
-    @include media-max-with($breakpoint-mobile-max-width){
+@mixin  desktop-view {
+    @media (min-width:$breakpoint-desktop-min-width) and (max-width:$breakpoint-desktop-max-width){
         @content;
     }
 }
-
